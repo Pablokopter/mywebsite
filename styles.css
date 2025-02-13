@@ -140,14 +140,20 @@ body {
 .escape-button:hover {
     background-color: rgb(255, 85, 85);
 }
-#eyes {
+#eye {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* расстояние между глазиками */
+    justify-content: space-around; /* Располагаем глаза друг от друга */
+    align-items: center;
+    height: 200px;
+    width: 400px; /* Увеличиваем ширину, чтобы оба глаза поместились */
+    position: relative;
 }
 
 .eye-container {
     position: relative;
+    display: flex;
+    justify-content: space-between; /* Раздвигаем глаза */
+    width: 100%;
 }
 
 .eye {
@@ -160,7 +166,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
 }
 
 .pupil {
@@ -171,3 +176,15 @@ body {
     position: absolute;
     transition: transform 0.1s ease;
 }
+
+.mouth {
+    width: 100px;
+    height: 20px;
+    background-color: #ff6666; /* Цвет рта */
+    border-radius: 50px; /* Скругляем края, чтобы был изгиб */
+    position: absolute;
+    bottom: -30px; /* Позиционируем рот ниже глаз */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем рот по горизонтали */
+}
+
