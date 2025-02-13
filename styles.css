@@ -142,17 +142,17 @@ body {
 }
 #eye {
     display: flex;
-    justify-content: space-around; /* Располагаем глаза друг от друга */
+    justify-content: space-around; 
     align-items: center;
     height: 200px;
-    width: 400px; /* Увеличиваем ширину, чтобы оба глаза поместились */
+    width: 400px;
     position: relative;
 }
 
 .eye-container {
     position: relative;
     display: flex;
-    justify-content: space-between; /* Раздвигаем глаза */
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -187,4 +187,5 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Центрируем рот по горизонтали */
 }
+
 
