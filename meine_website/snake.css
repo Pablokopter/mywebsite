@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #04bd89 , #0a90b2);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#gameCanvas {
+    border: 2px solid #fff;
+    background-color: #3c8c3c; /* Добавляем зеленый фон */
+    margin:0 auto; /* Центрируем сетку */
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 5px #cbd5cf, 0 0 10px #d7dfda;
+}
+
+#restart-button,
+#restart-game-over {
+    background-color: #ff0066;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    position: relative;
+    bottom: -60px; /* Перемещаем кнопку ниже */
+}
+
+#restart-button:hover,
+#restart-game-over:hover {
+    background-color: #ff3385;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #fff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #ff0066, 0 0 10px #ff0066;
+}
+
+
+
+
+

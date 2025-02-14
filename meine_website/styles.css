@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 1s ease;
+}
+
+.daytime {
+    background: linear-gradient(to bottom, #c4eb14, #727f83, #011017);
+}
+
+.nighttime {
+    background: linear-gradient(to bottom, #121212, #370450, #020245);
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.neon-text {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    animation: neon 1.5s infinite alternate;
+    letter-spacing: 5px;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
+    }
+    100% {
+        text-shadow: 0 0 20px #00ff66, 0 0 30px #00ff66, 0 0 40px #00ff66;
+    }
+}
+
+.cta-button {
+    background-color: #ff0066;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #ff3385;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#eye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.eye-container {
+    position: relative;
+}
+
+.eye {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pupil {
+    width: 50px;
+    height: 50px;
+    background-color: #121212;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.1s ease;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.escape-button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    position: absolute;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escape-button:hover {
+    background-color: rgb(255, 85, 85);
+}
+#eye {
+    display: flex;
+    justify-content: space-around; /* Располагаем глаза друг от друга */
+    align-items: center;
+    height: 200px;
+    width: 400px; /* Увеличиваем ширину, чтобы оба глаза поместились */
+    position: relative;
+}
+
+.eye-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Раздвигаем глаза */
+    width: 100%;
+}
+
+.eye {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pupil {
+    width: 50px;
+    height: 50px;
+    background-color: #121212;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.1s ease;
+}
+
+.mouth {
+    width: 100px;
+    height: 20px;
+    background-color: #ff6666; /* Цвет рта */
+    border-radius: 50px; /* Скругляем края, чтобы был изгиб */
+    position: absolute;
+    bottom: -30px; /* Позиционируем рот ниже глаз */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем рот по горизонтали */
+}
